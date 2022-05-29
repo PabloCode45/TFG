@@ -1,0 +1,14 @@
+
+may 29, 2022 18:02:49.222 NEW SESSION
+may 29, 2022 18:02:49.222 [17244:21612:0529/180249.219:ERROR:device_event_log_impl.cc(214)] [18:02:49.219] USB: usb_device_handle_win.cc:1049 Failed to read descriptor from node connection: Uno de los dispositivos conectados al sistema no funciona. (0x1F)
+may 29, 2022 18:02:49.224 [17244:21612:0529/180249.219:ERROR:device_event_log_impl.cc(214)] [18:02:49.219] USB: usb_device_handle_win.cc:1049 Failed to read descriptor from node connection: Uno de los dispositivos conectados al sistema no funciona. (0x1F)
+may 29, 2022 18:02:49.225 [17244:21612:0529/180249.221:ERROR:device_event_log_impl.cc(214)] [18:02:49.221] USB: usb_device_handle_win.cc:1049 Failed to read descriptor from node connection: Uno de los dispositivos conectados al sistema no funciona. (0x1F)
+
+may 29, 2022 18:11:43.501 NEW SESSION
+may 29, 2022 18:11:43.502 [14248:5024:0529/181143.501:ERROR:device_event_log_impl.cc(214)] [18:11:43.501] USB: usb_device_handle_win.cc:1049 Failed to read descriptor from node connection: Uno de los dispositivos conectados al sistema no funciona. (0x1F)
+may 29, 2022 18:11:43.503 [14248:5024:0529/181143.501:ERROR:device_event_log_impl.cc(214)] [18:11:43.501] USB: usb_device_handle_win.cc:1049 Failed to read descriptor from node connection: Uno de los dispositivos conectados al sistema no funciona. (0x1F)
+may 29, 2022 18:11:43.506 [14248:5024:0529/181143.503:ERROR:device_event_log_impl.cc(214)] [18:11:43.503] USB: usb_device_handle_win.cc:1049 Failed to read descriptor from node connection: Uno de los dispositivos conectados al sistema no funciona. (0x1F)
+may 29, 2022 18:12:09.741 [14248:5024:0529/181209.734:ERROR:sharing_service.cc(252)] Device un-registration failed with fatal error
+may 29, 2022 18:12:41.363 [14248:2156:0529/181241.362:ERROR:util.cc(126)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+may 29, 2022 18:22:45.73 [14248:5024:0529/182245.073:ERROR:device_event_log_impl.cc(214)] [18:22:45.073] USB: usb_service_win.cc:104 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: No se ha encontrado el elemento. (0x490)
+may 29, 2022 18:22:45.76 [14248:5024:0529/182245.075:ERROR:device_event_log_impl.cc(214)] [18:22:45.076] USB: usb_service_win.cc:307 SetupDiEnumDeviceInterfaces: No se dispone de más datos. (0x103)

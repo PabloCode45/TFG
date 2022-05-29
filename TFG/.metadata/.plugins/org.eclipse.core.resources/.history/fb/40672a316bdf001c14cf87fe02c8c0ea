@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>SuperChicche</title>
+        <link rel="stylesheet" href="/xxx/platos.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!--MENU DE LA PAGINA-->
+        <div >
+            <nav>
+                
+			
+                <div class="c1">
+                    <ul >
+				        <li class="apartados" id="inicio"><a id="rosa" href="inicio.html" >INICIO</a></li>
+                    </ul>
+                </div>
+                <div class="c5">
+                    <ul>
+                        <li class="apartados" id="reservas"><a id="rosa" href="platos.html" >PLATOS</a></li>
+                    </ul>
+                </div>
+                <div class="c2">
+                    <li ><img src="../img/zeus.png" alt="logo" id="logo" ></li>
+                </div>
+                <div class="c3">
+                    <ul>
+                        <li class="apartados" id="carta"> <a id="rosa" href="carta.html" >PRODUCTO</a></li>
+                    </ul>   
+                </div> 
+                <div class="c6">
+                    
+                    <ul>
+                        <li class="about" id="about"><a id="rosa" href="" >ALTA</a></li>
+                    </ul>  
+                
+                </div>
+            </nav>
+        </div> 
+        <!--CONTACTO-->
+
+        <h1>GALERÍA</h1>
+
+        <div class="d45">
+            <div class="izq">
+                <div class="imagg">
+                    <img src="../img/burrata.jpg" alt="x" class="x">
+                </div>
+                <div class="imagg">
+                    <img src="../img/caesars salad.jpg" alt="x" class="x">
+                </div>
+                <div class="imagg">
+                    <img src="../img/Chuletón.PNG" alt="x" class="x">
+                </div>
+                <div class="imagg">
+                    <img src="../img/garlic bread.jpg" alt="x" class="x">
+                </div>
+
+            </div>
+            <div class="der">
+                <div class="imagg">
+                    <img src="../img/grilled portobello.jpg" alt="x" class="x">
+                </div>
+                <div class="imagg">
+                    <img src="../img/liguini con carne.jpg" alt="x" class="x">
+                </div>
+                <div class="imagg">
+                    <img src="../img/penne pesto.jpg" alt="x" class="x">
+                </div>
+                <div class="imagg">
+                    <img src="../img/pizza.jpg" alt="x" class="x">
+                </div>
+
+            </div>
+
+        </div>
+
+        <!--PIE DE PAGINA-->
+        <div id ="pie">
+            <footer id="footer1">
+                <div id="izquierdopie">
+                    <p>Otro enlaces</p>
+                    <p><a id="azul" href="https://www.aepd.es/es/politica-de-privacidad-y-aviso-legal">>Politica de privacidad</a></p>
+                    <p><a id="azul" href="https://www.divinopaladar.es/receta-facil/cookies-caseras/">>Cookies</a></p>
+                </div>
+                <div id="derechopie">
+                    <p>Horario</p>
+                    <p>
+                    <table class="tablahorario">   
+                        <tr>
+                        <td>Martes-Jueves</td>
+                        <td>13:00/23:00</td>
+                        </tr>
+                        <tr>
+                        <td>Viernes-Domingo</td>
+                        <td>12:30/01:30</td>
+                        </tr>
+                    </table>
+                    </p>
+                </div>
+               
+            </footer>
+            <footer id="footer2">
+                <p>Restaurante Zeus</p>
+            </footer>
+
+
+        </div>
+
+
+
+        
+
+        
+    </body>
+</html>

@@ -1,0 +1,5 @@
+package com.ayesa.dtos;
+
+public class PersonaDTO {
+
+}

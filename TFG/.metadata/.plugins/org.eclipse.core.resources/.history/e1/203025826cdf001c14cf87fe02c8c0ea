@@ -1,0 +1,382 @@
+
+
+/*COLOCACION CAJAS GRANDES*/
+nav{
+  display:flex;/*lugar de las cajas*/
+  background-color: bisque; /*-------------------------------------------------orientativo para verlo--------------------------------------------------*/
+  width:100%; /*tamaños*/
+  height: 15%;
+  font-size: 200%;
+  
+}
+
+ul{
+  padding-top: 5%;
+}
+
+/*CAJAS*/
+
+.c1{
+  flex:2;/*tamaño de las cajas*/ /*separacion del filo top*/
+
+}
+.c2{
+  flex:2;
+
+}
+.c3{
+  flex:2;
+
+}
+
+
+.c5{
+  flex: 2;
+
+}
+.c6{
+  flex: 2;  
+}
+
+/*colocar en su lugar las letras de las cajas*/
+#inicio{
+  left: 20%; /*COLOCACION PARA LA IZQUIERDA*/ 
+  
+}
+
+#reservas{
+  left: 13%;
+}
+
+#logo{
+    width: 20%;
+    height: 10%;
+  padding-top: 9%;
+}
+
+#carta{
+  left: 20%;
+}
+
+#about{
+  left: 13%;
+
+}
+#about:hover{
+  border-style: solid;
+  background-color: #bffcc6;
+  border: 1px solid green;
+  z-index: 1;
+  left: 1%;
+}
+
+
+#chico{
+  left: 62%;
+}
+
+a{/*enlaces*/
+  text-decoration: none;/*no subrayado*/
+}
+li{/*lista de enlaces*/
+  text-align: center; /*centrado*/
+  display: inline-block; /*horizontal*/
+  position:relative;/*para desplegable*/
+
+}
+
+nav li>ul{/*desplegable*/
+  display:none;
+}
+
+nav li:hover>ul{ /*desplegable al pasar el raton*/
+    display:inline-block;/*baje al pasar raton el deplegable*/
+    position:relative;
+    top:110%;
+    left:-60%;
+    box-sizing: content-box; /*hay que retocar y ver que hace*/
+    z-index: 1;
+}
+
+/*COLOCACION*/
+.apartados{
+  left:80%;
+}
+
+
+
+
+
+/*------------------PIE DE PAGINA---------------------------*/
+
+
+#footer1{
+  display:flex;
+  background-color: #ACE7FF; 
+  font-size: 100%;
+ 
+  
+}
+
+#footer1 div{
+  flex: 1;
+   position: center;
+  
+}
+
+#izquierdopie p  {
+  display: block;
+  width: 80%;
+  position: relative;
+  left: 50%;
+  text-align: left;
+  
+}
+#derechopie p{
+  display: block;
+  width: 80%;
+  position: relative;
+   text-align: left;
+  
+
+}
+#centropie p{
+  position:relative;
+  top: 25%;
+  text-align: center;
+  left: -2.5%;
+  
+}
+#centropie img{
+  justify-content: center;
+  position:relative;
+  left: 42%;
+  top: 45%;
+  width: 20px;
+  height: 20px;
+  
+}
+
+/*ENLACES*/
+a{ 
+  font-size:100%;
+  color:#000000;
+  text-decoration:none
+}
+#rosa:hover{
+  font-size: 130%;
+}
+#verde:hover{
+  color:#00aa2b;
+  font-size: 110%;
+}
+#azul:hover{
+  color:#0058aa;
+  font-size: 110%;
+}
+/*TABLA PIE DE PAGINA*/
+
+.tablahorario{
+   width: 100%;        /*anchura de la tabla*/
+   border: 1px solid #000;
+ }
+ th, td {
+    width: 80%;    /*anchura de las celdas*/
+    text-align: left;
+    vertical-align: top;
+    border: 1px solid #000;
+ }
+
+ #footer2 p{
+   border-collapse: collapse;
+  margin: 0%;
+  background-color: #5b78a7;
+  text-align: center;
+}
+
+/*cuerpo de la pagina*/
+body {
+  font-family: 'Dosis', sans-serif;
+  margin: 0%;
+
+}
+
+/*BODY CONTACTO*/
+h1{
+  text-align: center;
+}
+section{
+  display: flex;
+  
+  width: 100%;
+  height: 50%;
+}
+/*COLOCAR*/
+.informacion{
+  flex: 1;
+  border-color: bisque;
+  border-style: ridge;
+  text-align: center;
+  position: absolute;
+  height: 25%;
+  left: 15%;
+  top: 40%;
+  right: 60%;
+}
+.img1{
+  flex: 1;
+  left: 55%;
+  position: absolute; /*para poder usar left y demas*/
+  width: 60%;
+  top: 270px;
+}
+.img2{
+  flex: 1;
+  position: absolute;
+  width: 80%;
+  left: 5%;
+  top: 88%;
+}
+.telefonoycorreo{
+  flex: 1;
+  position: absolute; /*posicion dentro del section*/
+  border-color: bffcc6;
+  border-style: ridge;
+  text-align: center;
+  top: 95%;
+  left: 65%;
+  height: 20%;
+  right: 15%;
+}
+.mapa{
+  position: absolute;
+  top: 143%;
+  left: 15%;
+}
+iframe{
+  padding-left:25%;
+  border: solid black 3px;
+  
+}
+.formu{
+  flex: 1;
+  display: flex;
+  position: absolute; /*posicion para empezar a moverlo pa izquierda, derecha, arriba*/
+  text-align: center;
+  top: 185%;
+  left: 10%;
+  right: 40%;
+  height: 300px; /*agranda el cuadrao pa abajo*/
+  border: solid #0058aa;
+}
+.titu{
+  position: absolute;
+  left: 42%;
+  top: 5%;
+}
+.positivismo{
+  flex: 1;
+  position: absolute;
+  border-style:ridge;
+  border-color: ACE7FF;
+  text-align: center;
+  top: 200%;
+  left: 70%;
+  right: 15%;
+}
+.reclamaciones1{
+  flex: 1;
+  position: absolute;
+  text-align: justify;
+  margin-top: 3%;
+  padding-top: 2%;
+  top: 10%;
+  left: 10%;
+  right: 15%;
+}
+.camposdetexto{
+  flex: 1;
+  position: absolute;
+  text-align: justify;
+  margin-top: 3%;
+  padding-top: 2%;
+  top: 9%;
+  left: 30%;
+  right: 15%;
+}
+.calendario{
+  flex: 1;
+  position: absolute;
+  text-align: justify;
+  margin-top: 3%;
+  padding-top: 2%;
+  top: 5%;
+  left: 70%;
+  right: 5%;
+}
+.problema{
+  position: absolute;
+  text-align: justify;
+  margin-top: 3%;
+  padding-top: 3%;
+  top: 22%;
+  left: 10%;
+  right: 15%;
+}
+
+/*colocacion cosas de dentro de los div*/
+#exterior{
+  width: 60%;
+}
+#interior{
+  width: 60%;
+}
+span{
+  color: #ff002b;
+}
+
+.d45 {
+  height: 300%;
+  width: 100%;
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.izq {
+  height: 90%;
+  width: 40%;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+.der {
+  height: 90%;
+  width: 40%;
+  flex-direction: column;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+.imagg {
+  height: 23%;
+  width: 90%;
+  flex-direction: column;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+.x {
+  width: 100%;
+  height: 100%;
+
+}
