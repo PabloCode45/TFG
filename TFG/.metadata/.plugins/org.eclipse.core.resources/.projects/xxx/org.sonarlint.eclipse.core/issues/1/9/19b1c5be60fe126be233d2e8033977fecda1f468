@@ -1,0 +1,35 @@
+
+j
+java:S2696&"6Make the enclosing method "static" or remove this set.(³±ÆØøÿÿÿÿHáRCRITICALZ
+CODE_SMELL
+j
+java:S2259X"@A "NullPointerException" could be thrown; "st" is nullable here.(±¡•ÇøÿÿÿÿHâRMAJORZBUG
+†
+java:S1192G"RDefine a constant instead of duplicating this literal "' AND APELLIDOS='" 3 times.(Ô€À×ıÿÿÿÿHèRCRITICALZ
+CODE_SMELL
+W
+java:S11683"+Return an empty collection instead of null.(¥¹ïHìRMAJORZ
+CODE_SMELL
+j
+java:S2259)"@A "NullPointerException" could be thrown; "st" is nullable here.(ÚƒÆ°ÿÿÿÿÿHïRMAJORZBUG
+e
+java:S2259J"@A "NullPointerException" could be thrown; "st" is nullable here.(ÈÍ¡µHõRMAJORZBUG
+e
+java:S2259"@A "NullPointerException" could be thrown; "st" is nullable here.(…Â®ßHûRMAJORZBUG
+r
+java:S2147†"ECombine this catch with the one at line 131, which has the same body.(É®£HRMINORZ
+CODE_SMELL
+d
+java:S2696+"6Make the enclosing method "static" or remove this set.(ã½›]HƒRCRITICALZ
+CODE_SMELL
+d
+java:S2259j"@A "NullPointerException" could be thrown; "st" is nullable here.(—Í÷H„RMAJORZBUG
+q
+java:S2696="6Make the enclosing method "static" or remove this set.(³±ÆØøÿÿÿÿ8ªÀÕÇ‘0HŠRCRITICALZ
+CODE_SMELL
+k
+java:S2696K"6Make the enclosing method "static" or remove this set.(ã½›]8ªÀÕÇ‘0H‹RCRITICALZ
+CODE_SMELL
+r
+java:S2696"6Make the enclosing method "static" or remove this set.(³±ÆØøÿÿÿÿ8ªÀÕÇ‘0HŒRCRITICALZ
+CODE_SMELL

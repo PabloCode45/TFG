@@ -12,3 +12,26 @@ may 29, 2022 18:12:09.741 [14248:5024:0529/181209.734:ERROR:sharing_service.cc(2
 may 29, 2022 18:12:41.363 [14248:2156:0529/181241.362:ERROR:util.cc(126)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
 may 29, 2022 18:22:45.73 [14248:5024:0529/182245.073:ERROR:device_event_log_impl.cc(214)] [18:22:45.073] USB: usb_service_win.cc:104 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: No se ha encontrado el elemento. (0x490)
 may 29, 2022 18:22:45.76 [14248:5024:0529/182245.075:ERROR:device_event_log_impl.cc(214)] [18:22:45.076] USB: usb_service_win.cc:307 SetupDiEnumDeviceInterfaces: No se dispone de más datos. (0x103)
+
+may. 31, 2022 09:13:52.740 NEW SESSION
+may. 31, 2022 09:13:52.740 [5324:1856:0531/091352.738:ERROR:device_event_log_impl.cc(214)] [09:13:52.739] USB: usb_device_handle_win.cc:1049 Failed to read descriptor from node connection: Uno de los dispositivos conectados al sistema no funciona. (0x1F)
+may. 31, 2022 09:13:52.742 [5324:1856:0531/091352.741:ERROR:device_event_log_impl.cc(214)] [09:13:52.741] USB: usb_device_handle_win.cc:1049 Failed to read descriptor from node connection: Uno de los dispositivos conectados al sistema no funciona. (0x1F)
+may. 31, 2022 09:13:52.743 [5324:1856:0531/091352.741:ERROR:device_event_log_impl.cc(214)] [09:13:52.741] USB: usb_device_handle_win.cc:1049 Failed to read descriptor from node connection: Uno de los dispositivos conectados al sistema no funciona. (0x1F)
+may. 31, 2022 09:14:17.658 [5496:15380:0531/091417.657:ERROR:device_event_log_impl.cc(214)] [09:14:17.657] USB: usb_device_handle_win.cc:1049 Failed to read descriptor from node connection: Uno de los dispositivos conectados al sistema no funciona. (0x1F)
+may. 31, 2022 09:14:17.660 [5496:15380:0531/091417.660:ERROR:device_event_log_impl.cc(214)] [09:14:17.660] USB: usb_device_handle_win.cc:1049 Failed to read descriptor from node connection: Uno de los dispositivos conectados al sistema no funciona. (0x1F)
+may. 31, 2022 09:14:17.662 [5496:15380:0531/091417.660:ERROR:device_event_log_impl.cc(214)] [09:14:17.660] USB: usb_device_handle_win.cc:1049 Failed to read descriptor from node connection: Uno de los dispositivos conectados al sistema no funciona. (0x1F)
+
+jun. 01, 2022 17:12:34.94 NEW SESSION
+jun. 01, 2022 17:12:34.94 [8472:10812:0601/171234.091:ERROR:device_event_log_impl.cc(214)] [17:12:34.092] USB: usb_device_handle_win.cc:1049 Failed to read descriptor from node connection: Uno de los dispositivos conectados al sistema no funciona. (0x1F)
+jun. 01, 2022 17:12:34.103 [8472:10812:0601/171234.092:ERROR:device_event_log_impl.cc(214)] [17:12:34.092] USB: usb_device_handle_win.cc:1049 Failed to read descriptor from node connection: Uno de los dispositivos conectados al sistema no funciona. (0x1F)
+jun. 01, 2022 17:13:28.280 [8472:13184:0601/171328.279:ERROR:util.cc(126)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+jun. 01, 2022 17:52:15.389 [18856:4544:0601/175215.389:ERROR:device_event_log_impl.cc(214)] [17:52:15.388] USB: usb_device_handle_win.cc:1049 Failed to read descriptor from node connection: Uno de los dispositivos conectados al sistema no funciona. (0x1F)
+jun. 01, 2022 17:52:15.402 [18856:4544:0601/175215.389:ERROR:device_event_log_impl.cc(214)] [17:52:15.388] USB: usb_device_handle_win.cc:1049 Failed to read descriptor from node connection: Uno de los dispositivos conectados al sistema no funciona. (0x1F)
+jun. 01, 2022 17:53:11.792 [18856:15804:0601/175311.791:ERROR:util.cc(126)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+
+jun. 02, 2022 18:22:26.34 NEW SESSION
+jun. 02, 2022 18:22:26.34 [11896:14548:0602/182226.030:ERROR:device_event_log_impl.cc(214)] [18:22:26.030] USB: usb_device_handle_win.cc:1048 Failed to read descriptor from node connection: Uno de los dispositivos conectados al sistema no funciona. (0x1F)
+jun. 02, 2022 18:22:26.43 [11896:14548:0602/182226.030:ERROR:device_event_log_impl.cc(214)] [18:22:26.030] USB: usb_device_handle_win.cc:1048 Failed to read descriptor from node connection: Uno de los dispositivos conectados al sistema no funciona. (0x1F)
+jun. 02, 2022 18:24:15.849 [16640:19808:0602/182415.848:ERROR:device_event_log_impl.cc(214)] [18:24:15.848] USB: usb_device_handle_win.cc:1048 Failed to read descriptor from node connection: Uno de los dispositivos conectados al sistema no funciona. (0x1F)
+jun. 02, 2022 18:24:15.850 [16640:19808:0602/182415.848:ERROR:device_event_log_impl.cc(214)] [18:24:15.848] USB: usb_device_handle_win.cc:1048 Failed to read descriptor from node connection: Uno de los dispositivos conectados al sistema no funciona. (0x1F)
+jun. 02, 2022 18:25:13.508 [16640:23192:0602/182513.507:ERROR:util.cc(127)] Can't create base directory: C:\Program Files\Google\GoogleUpdater

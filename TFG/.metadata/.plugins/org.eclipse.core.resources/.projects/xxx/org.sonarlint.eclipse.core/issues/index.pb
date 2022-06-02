@@ -1,0 +1,25 @@
+
+Z
+*src/main/java/com/ayesa/model/Persona.java,8\d\8ddb7d1811ad35196af43cc11f88e49ecd75c7d9
+O
+src/main/webapp/WEB-INF/web.xml,2\e\2e22b6edd746fa3dc40ad7276c87c8d87d72a392
+J
+src/main/webapp/inicio.css,7\d\7dab1d83201396d4f183e5bbe4af8bbb4fd2a480
+J
+src/main/webapp/platos.css,c\c\ccf0fbba555ede8a9a041334aea60c3419fcd9ec
+J
+src/main/webapp/index.html,1\3\1337d72a3b1928dba82aa5210f5cdc0e88ce895b
+I
+src/main/webapp/crear.jsp,1\a\1a45373807977c827e8c8ebb80c287dff8282912
+r
+Bsrc/main/java/com/ayesa/service/personaservice/PersonaService.java,c\7\c7ca019bdbe566c098a4e12452f752a4254274ab
+{
+Ksrc/main/java/com/ayesa/service/personaservice/impl/PersonaServiceImpl.java,8\0\809fe1b8740b18c687ebb4b92e3dcc6084df409c
+h
+8src/main/java/com/ayesa/model/PersonaCRUDRepository.java,1\9\19b1c5be60fe126be233d2e8033977fecda1f468
+\
+,src/main/java/com/ayesa/dtos/PersonaDTO.java,4\c\4c44b72a0242769dd12762c4275e8bd2108aec64
+a
+1src/main/java/com/ayesa/model/CRUDrepository.java,3\4\3443e8e8ee7b80b3d18e9492dd8721944958d48f
+f
+6src/main/java/com/ayesa/controller/MainController.java,3\1\31d92d4407a6c5852284ce4298012b3874d701c6

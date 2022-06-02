@@ -18,31 +18,31 @@ public class PersonaCRUDRepository implements CRUDrepository<PersonaDTO>{
 	private static List<PersonaDTO> personas = new LinkedList<>();
 
 	@Override
-	public boolean Create(PersonaDTO personaDTO) {
-		Statement st;	
-		st = Conexion();
-		
-		try {
-			if(ReadOne(personaDTO).isEmpty()) {
+	public boolean create(PersonaDTO personaDTO) {
+		try(Statement st=getConnetion()) {
+			boolean retVal=false;
+			if(readOne(personaDTO).isEmpty()) {
 				st.executeUpdate("INSERT INTO PERSONA (NOMBRE, APELLIDOS) VALUES ('"+personaDTO.getNombre()+"','"+personaDTO.getApellidos()+"')");
-				return true;
-			}else {
-				return false;
+				retVal=true;
 			}
+			if(st!=null) {
+			st.getConnection().close();
+			}
+			return retVal;
 			
 		}catch(SQLException e) {e.printStackTrace();return false;}
 	}
 
 	@Override
-	public List<PersonaDTO> ReadAll() {
-		Statement st;
-		ResultSet rs;		
-		st = Conexion();
+	public List<PersonaDTO> readAll() {
+		personas = new LinkedList<>();
 		
-		try {
-			rs = st.executeQuery("SELECT IDPERSONA, NOMBRE, APELLIDOS FROM PERSONA");
+		try(Statement st = getConnetion()) {
+			ResultSet rs = st.executeQuery("SELECT IDPERSONA, NOMBRE, APELLIDOS FROM PERSONA");
 			
-			return rellenarLista(rs);
+			personas = rellenarLista(rs);
+			st.getConnection().close();
+			return personas;
 			
 		} catch (SQLException e) {
 			e.printStackTrace();
@@ -52,14 +52,13 @@ public class PersonaCRUDRepository implements CRUDrepository<PersonaDTO>{
 	}
 	
 	@Override
-	public List<PersonaDTO> ReadOne(PersonaDTO personaDTO) throws SQLException{
+	public List<PersonaDTO> readOne(PersonaDTO personaDTO) throws SQLException{
 		if(personaDTO== null) throw new SQLException();
-	Statement st;
-	ResultSet rs = null;		
-	st = Conexion();
-	String query="";
+		Statement st = getConnetion();
+		ResultSet rs;
+		String query="";
 	
-	personas = new LinkedList<>();
+		personas = new LinkedList<>();
 	
 	
 		if(personaDTO.getNombre().isEmpty()) {
@@ -72,49 +71,52 @@ public class PersonaCRUDRepository implements CRUDrepository<PersonaDTO>{
 			query="WHERE NOMBRE='"+personaDTO.getNombre()+"' AND APELLIDOS='"+personaDTO.getApellidos()+"'";
 				
 		}
-
-		return rellenarLista(rs = st.executeQuery("SELECT IDPERSONA, NOMBRE, APELLIDOS FROM PERSONA " + query));
+		rs = st.executeQuery("SELECT IDPERSONA, NOMBRE, APELLIDOS FROM PERSONA " + query);
+		personas = rellenarLista(rs);
+		st.getConnection().close();
+		
+		return personas;
 		
 	}
 
 	@Override
-	public boolean Update(PersonaDTO personaDTO, PersonaDTO personaDTO2) {
-		Statement st;
-		st = Conexion();
-		try {
-			if(!(ReadOne(personaDTO).isEmpty())) {
+	public boolean update(PersonaDTO personaDTO, PersonaDTO personaDTO2) {
+		boolean retVal = false;
+		
+		try(Statement st = getConnetion()) {
+			if(!(readOne(personaDTO).isEmpty())) {
 				st.executeUpdate("UPDATE PERSONA SET NOMBRE='"+personaDTO2.getNombre()+"', APELLIDOS='"+personaDTO2.getApellidos()+"' WHERE NOMBRE='"+personaDTO.getNombre()+"' AND APELLIDOS='"+personaDTO.getApellidos()+"'");
-				return true;
-			}else {
-				return false;
+				retVal = true;
 			}
+			return retVal;
 			
 			
 		} catch (SQLException e) {
 			e.printStackTrace();
-			return false;
+			return retVal;
 		}
 	}
 
 	@Override
-	public boolean Delete(PersonaDTO personaDTO) {
-		Statement st;
-		st = Conexion();
+	public boolean delete(PersonaDTO personaDTO) {
+		boolean retVal = false;
 		
-		try {
-			if(!(ReadOne(personaDTO).isEmpty())) {
-			st.executeUpdate("DELETE FROM PERSONA WHERE NOMBRE='"+personaDTO.getNombre()+"' AND APELLIDOS='"+personaDTO.getApellidos()+"'");
-			return true;
-			}else {
-				return false;
+		try(Statement st = getConnetion()) {
+			if(!(readOne(personaDTO).isEmpty())) {
+				st.executeUpdate("DELETE FROM PERSONA WHERE NOMBRE='"+personaDTO.getNombre()+"' AND APELLIDOS='"+personaDTO.getApellidos()+"'");
+				retVal=true;
 			}
+			
+			return retVal;
+			
 		} catch (SQLException e) {
 			e.printStackTrace();
 			return false;
 		}
 	}
 	
-	private Statement Conexion() {
+	private Statement getConnetion() {
+		
 		try {
 			InitialContext ctx = new InitialContext();
 			Connection con = null;
@@ -139,6 +141,7 @@ public class PersonaCRUDRepository implements CRUDrepository<PersonaDTO>{
 	
 	private List<PersonaDTO> rellenarLista(ResultSet rs) {
 		personas=new LinkedList<>();
+		
 		try {
 		while(rs.next()) {
 			PersonaDTO personaDTO = new PersonaDTO(0, null, null);

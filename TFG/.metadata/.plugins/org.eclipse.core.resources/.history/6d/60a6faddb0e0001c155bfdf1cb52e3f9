@@ -1,0 +1,5 @@
+package com.ayesa.service.personaservice;
+
+public interface PersonaService {
+
+}
